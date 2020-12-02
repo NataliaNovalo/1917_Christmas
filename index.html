@@ -1,0 +1,149 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>1917 - Missão de Natal</title>
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/style1.css">
+        <link rel="stylesheet" href="styles/gallery.min.css">
+        <link rel="stylesheet" href="styles/gallery.theme.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="nav">
+                    <ul class="nav_list">
+                        <a href="#info"><li class="nav_list_item">Informações</li></a>
+                        <a href="#trailer"><li class="nav_list_item">Trailer</li></a>
+                        <div id="logo">
+                            <img src="img/site/Logo.png" alt="logo_1917" id="logoFilme">
+                        </div>
+                        <a href="#curiosidades"><li class="nav_list_item">Curiosidade</li></a>
+                        <a href="#galeria"><li class="nav_list_item">Galeria</li></a>
+                    </ul>
+                </div>
+            </div>
+                <section class="gameSec">
+                    <div class="game_control">
+                        <img src="img/site/play.png" id="control_play" onclick="play()">
+                        <img src="img/site/refresh.png" id="control_refresh" onclick="refresh()">
+                            <p>Pontos:0</p><span id="resultado"></span>
+                    </div>
+                    <div id="game" onclick="jump()">
+                        <div id="character">
+                            <img src="img/site/character.png" id="character_img">
+                        </div>
+                        <div id="block">
+                            <img src="img/site/bola1.png" id="block_img">
+                        </div>
+                    </div>
+                </section>
+            <div>
+                <a href="#logo">
+                    <img src="img/site/icone_cima2.png" id="icone_volta">
+                </a>
+            </div>
+            <main>
+                <section class="infoSec">
+                    <div id="texto">
+                        <h1 id="info">O Filme</h1>
+                        <p>"1917 - Missão de Natal" será lançado em 20 de dezembro de 2020 nas principais plataformas de streaming!</p>
+                        <p>Não perca essa comédia de natal que, com certeza, irá alegrar seu final de ano!</p>
+                    </div>
+                    <div id="poster">
+                        <img src="img/produtos/poster_cinema.jpg" alt="poster_oficial" id="posterImg">
+                    </div>
+                    <div class="sinopse">
+                        <h2>Sinopse</h2>
+                        <p>Na véspera de Natal de 1917, o General de um batalhão percebe que a comida armazenada
+                            não será suficiente para a grande Ceia. Então, encarrega dois soldados para buscar os ingredientes para a festa. Tudo correria bem se esses soldados não fossem Sebastião e Bruno,
+                            os soldados mais atrapalhados da tripulação. Será que eles vão conseguir cumprir sua missão e salvar a Ceia?</p>
+                    </div>
+                </section>
+                <section class="trailer">
+                    <h2 id="trailer">Trailer</h2>
+                    <div id="video">
+                        <iframe width="1000" height="515" src="https://www.youtube.com/embed/5TkuOmPGsyA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </section>
+                <section class="curiosidades">
+                    <h2 id="curiosidades">Você Sabia?</h2>
+                        <div class="texto">
+                            <p>Conhecida como armistício de 1914 ou trégua de 1914, foi um acontecimento de dezembro de 1914, durante a Primeira
+                            Guerra Mundial, entre Ingleses e Alemães.
+                            Durante seis dias houve um cessar-fogo não oficial para que os soldados pudessem celebrar a época do natal,
+                            e, por alguns dias, eles se permitiram esquecer de toda a rivalidade. Inclusive houve uma
+                            partida de futebol na chamada “terra de ninguém”, área localizada entre as trincheiras. Durantes esse período os soldados se cumprimentaram, enterraram corpos dos soldados falecidos e festejaram por um breve
+                            momento o espírito de Natal.</p>
+                            <p>Nós, do time Aurora, esperamos que o filme "1917 - Missão de Natal" traga alegria para o seu natal e que consiga lembrá-los que perseverança, amor e paz são os sentimentos pelos quais vale a pena viver.</p>
+                        </div>
+                        <div class="box">
+                            <div class="box-item">
+                                <img class="fotoTregua" src="img/site/tregua1.jpeg" alt="tregua">
+                                <p class="box-text">Partida de futebol entre soldados ingleses durante a Primeira Guerra. (Foto: Reprodução / UEFA).</p>
+                            </div>
+                            <div class="box-item">
+                                <img class="fotoTregua" src="img/site/tregua2.jpeg" alt="tregua">
+                                <p class="box-text">Monumento que simboliza a trégua de 1914, inaugurado pela UEFA na Bégica. (Foto: Colin Gould / Flickr).</p>
+                            </div>
+                            <div class="box-item">
+                                <img class="fotoTregua" src="img/site/tregua3.jpg" alt="tregua">
+                                <p class="box-text">Matéria publicada no jornal Daily Mirror sobre a trégua</p>
+                            </div>
+                        </div>
+                </section>
+                <section class="galeria">
+                    <h2 id="galeria">Galeria</h2>
+                    <div class="gallery autoplay items-5">
+                        <div id="item-1" class="control-operator"></div>
+                        <div id="item-2" class="control-operator"></div>
+                        <div id="item-3" class="control-operator"></div>
+                        <div id="item-4" class="control-operator"></div>
+                        <div id="item-5" class="control-operator"></div>
+
+                        <figure class="item">
+                            <span><img class="foto" src="img/produtos/foto1.png"></span>
+                        </figure>
+                        <figure class="item">
+                            <span><img class="foto" src="img/produtos/foto2.jpg"></span>
+                        </figure>
+                        <figure class="item">
+                            <span><img id="fotoDif" src="img/produtos/foto3.png"></span>
+                        </figure>
+                        <figure class="item">
+                            <span><img class="foto" src="img/produtos/foto4.jpg"></span>
+                        </figure>
+                        <figure class="item">
+                            <span><img class="foto" src="img/produtos/foto5.jpg"></span>
+                        </figure>
+
+                        <div class="controls">
+                            <a href="#item-1" class="control-button">.</a>
+                            <a href="#item-2" class="control-button">.</a>
+                            <a href="#item-3" class="control-button">.</a>
+                            <a href="#item-4" class="control-button">.</a>
+                            <a href="#item-5" class="control-button">.</a>
+                        </div>
+
+                    </div>
+                </section>
+            </main>
+            <hr>
+            <div class="footer">
+                <div class="grupo">
+                    <h3>Grupo Aurora</h3>
+                    <p>Clara Carvalho - RM: 85177</p>
+                    <p>Giovanna Nonato - RM: 84616</p>
+                    <p>Natalia Marchesin - RM: 86239</p>
+                    <p>Natalia Yumie - RM: 85693</p>
+                </div>
+                <div id="redes">
+                    <p>Siga nossa rede social!</p>
+					<a href="https://instagram.com/1917missaodenatal?igshid=hfxsj6wbyfcx
+                        " target="_blank"><div class="imagem tamanho instagram"></div>
+                    </a>
+				</div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>

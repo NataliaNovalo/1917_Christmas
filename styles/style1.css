@@ -1,0 +1,414 @@
+@font-face{
+    font-family:'Christmas';
+    src: url(../fontes/ThePerfectChristmas.otf)
+}
+
+@font-face{
+    font-family:'SourceR';
+    src: url(../fontes/SourceSansPro-Regular.ttf)
+}
+
+@font-face{
+    font-family:'SourceBB';
+    src: url(../fontes/SourceSansPro-Bold.ttf)
+}
+
+@font-face{
+    font-family:'SourceS';
+    src: url(../fontes/SourceSansPro-SemiBold.ttf)
+}
+
+@font-face{
+    font-family:'Simon';
+    src: url(../fontes/SimonScript.ttf)
+}
+
+body{
+    background-image: url('../img/site/Fundo1.png');
+    background-size: 500px;
+    background-repeat: repeat;
+    font-size:25px;
+    font-family: SourceR,verdana, arial, tahoma;
+    color:#010101;
+
+}
+
+.container{
+    width:1300px;
+    margin:0 auto;
+}
+
+main{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#icone_volta{
+    width:50px;
+    height:50px;
+    bottom:10;
+    right:50;
+    position: fixed;
+}
+
+/* ----------- início cabeçalho ----------- */
+.header{
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo{
+    margin-top: 20px;
+}
+
+#logoFilme{
+    width:180px;
+    height:83.4px;
+}
+
+.nav_list{
+    display:flex;
+    justify-content: space-around;
+}
+
+.nav_list a{
+    text-decoration: none;
+    font-family: Christmas;
+    color:#800d0a;
+}
+
+.nav_list_item{
+    margin:10px 40px 10px 40px;
+    padding:20px;
+    font-size: 60px;
+}
+
+.nav_list_item:hover{
+    background-color:#c3261d;
+    color: #ebebeb;
+    cursor:pointer;
+    border-radius: 80px;
+    transition: 0.5s;
+}
+
+
+/* ----------- fim cabeçalho ----------*/
+
+/* ----------- início game ---------- */
+
+.game_control{
+    display:flex;
+    justify-content: space-around;
+    margin-top:50px;
+}
+
+#control_play{
+    width:105px;
+    height:40px;
+}
+
+#control_play:hover{
+    cursor:pointer;
+}
+
+#control_refresh{
+    width:150px;
+    height:40px;
+}
+
+#control_refresh:hover{
+    cursor: pointer;
+}
+
+.gameSec{
+    margin: 0px 0 20px 0;
+}
+
+#game{
+    width:100%;
+    height:400px;
+    background-image: url('../img/site/CenarioGame6before.png');
+    background-size: cover;
+    background-position-y: -30px;
+    border-radius: 10px;
+}
+
+#character{
+    position:relative;
+    top:280px;
+    left:250px;
+    width:1000px;
+}
+
+.game_control p{
+    font-family: Simon;
+    font-weight: bold;
+    color: #224014;
+    margin-left:400px;
+}
+
+/* adicionar a animação criada aqui! */
+.animate{
+    animation: jump 500ms;
+}
+
+
+#block{
+    position:relative;
+    top:225px;
+    left:480px;
+    width:1000px;
+    /* adicionar a animação criada aqui! */
+}
+
+.aniBlock1{
+    animation: block 3s infinite ease-in-out;
+}
+
+.aniBlock2{
+    animation: block 2s infinite linear;
+}
+
+.aniBlock3{
+    animation: block 1s infinite ease-in-out;
+}
+
+/* animação */
+@keyframes block{
+    0%{left:1000px;}
+    100%{left:0px;}
+}
+
+@keyframes jump{
+    0%{top:150px;}
+    30%{top:100px;}
+    70%{top:100px;}
+    100%{top:150px;}
+}
+
+#character_img{
+    width:101.75px;
+    height:134px;
+}
+
+#block_img{
+    width:40px;
+    height:40px;
+}
+
+/* -------- fim game -----------*/
+
+/* ------------- início informações ------------ */
+
+.infoSec{
+    margin-top:50px;
+}
+
+.infoSec #texto h1{
+    text-transform: uppercase;
+    font-size:70px;
+    font-family:Christmas;
+    color:#800d0a;
+    text-align: center;
+}
+
+.infoSec #texto p{
+    font-family: SourceBB;
+    font-size:20px;
+    color:#224014;
+    padding:30px 50px 0px 20px;
+    text-align: center;
+}
+
+.infoSec #poster{
+    margin: 40px 0;
+    text-align: center;
+}
+
+#posterImg{
+    width:700px;
+    height:984.2px;
+}
+
+.sinopse{
+    border: dashed #a49c31 2px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.sinopse h2{
+    font-size:50px;
+    font-family:Christmas;
+    color:#800d0a;
+}
+
+.sinopse p{
+    font-family: SourceS;
+    text-indent: 1.5em;
+    font-size:20px;
+    color:#010101;
+    padding:30px 20px 0px 20px;
+    line-height: 30px;
+}
+
+/* ------- fim informações --------- */
+
+/* -------------- início trailer ---------*/
+.trailer{
+    margin-top: 50px;
+}
+
+.trailer h2{
+    text-transform: uppercase;
+    font-size:70px;
+    font-family:Christmas;
+    color:#800d0a;
+    text-align: center;
+}
+
+#video{
+    border-radius: 10px;
+    width:1000px;
+}
+
+.video{
+    align-items: center;
+}
+/* ------------ fim trailer ------------*/
+
+/* ----------- início curiosidades -------------- */
+.curiosidades h2{
+    text-transform: uppercase;
+    font-size:70px;
+    font-family:Christmas;
+    color:#800d0a;
+    text-align: center;
+    margin:40px 0 20px 0;
+}
+
+.curiosidades .texto{
+    /* background-image: url('../img/site/F_ver_ver4.png');
+    background-size: 500px; */
+    border:dashed #800d0a 2px;
+    border-radius: 10px;
+    padding:30px;
+}
+
+.curiosidades .texto p{
+    font-family: SourceS;
+    font-size:20px;
+    color:#010101;
+    text-indent: 1.5em;
+    line-height: 30px;
+}
+
+.box{
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+    height:350px;
+    margin-top: 30px;
+}
+
+.box-item{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width:310px;
+    height:360px;
+}
+
+.box-item p{
+    font-family: SourceR;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.fotoTregua{
+    margin-top: 10px;
+    width:317px;
+    height:227px;
+}
+/* --------- fim curiosidades ---------*/
+
+/* --------- início galeria -----------*/
+
+.galeria h2{
+    text-transform: uppercase;
+    font-size:70px;
+    font-family:Christmas;
+    color:#800d0a;
+    text-align: center;
+    margin:0px 0 40px 0;
+}
+
+.foto{
+    width:600px;
+    height:600px;
+}
+
+#fotoDif{
+    width:400px;
+    height:700px;
+}
+
+.gallery{
+    margin: 20px 0 50px 0;
+}
+/* --------- fim galeria ----------------*/
+
+/* --------- início footer ------------*/
+.footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:1000px;
+}
+
+hr{
+    border-color: #c3261d;
+}
+
+.grupo{
+    padding:10px 10px 20px 200px;
+}
+
+.grupo h3{
+    font-family: SourceS;
+    margin-bottom:10px;
+    color:#800d0a;
+}
+
+.grupo p{
+    margin-left:10px;
+    line-height: 20px;
+    color:#010101;
+    font-size:18px;
+}
+
+#redes p{
+    font-size:18px;
+    padding: 10px;
+    
+}
+
+#redes .imagem{
+    background-image: url("../img/site/icones.JPG");
+    background-size:171px 50px;
+    border-radius: 10px;
+}
+
+#redes .tamanho{
+    width:50px;
+    height:50px;
+}
+
+#redes .instagram{
+    background-position: -60px 0px;
+    margin:0 auto;
+}
+
+
+
+/* ------------ fim footer ------------*/
